@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fbb8e4de-6b8a-43b3-b0b3-b0eb3ac85868" name="Changes" comment="部署若依项目">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_18_23_05_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_18_23_05_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_18_23_05__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_18_23_05__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/clean.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/package.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/run-auth.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/run-gateway.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/run-modules-file.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/run-modules-gen.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/run-modules-job.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/run-modules-system.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/run-monitor.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/copy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/db/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nacos/conf/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nacos/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/conf/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/html/dist/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/redis/conf/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/redis/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/auth/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/auth/jar/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/gateway/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/gateway/jar/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/file/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/file/jar/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/gen/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/gen/jar/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/job/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/job/jar/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/system/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/modules/system/jar/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/visual/monitor/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ruoyi/visual/monitor/jar/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/RemoteFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/RemoteLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/RemoteUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysDictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysDictType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysLogininfor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysOperLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/domain/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/factory/RemoteFileFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/factory/RemoteLogFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/factory/RemoteUserFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/java/com/ruoyi/system/api/model/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-api/ruoyi-api-system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/java/com/ruoyi/auth/RuoYiAuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/java/com/ruoyi/auth/controller/TokenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/java/com/ruoyi/auth/form/LoginBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/java/com/ruoyi/auth/form/RegisterBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/java/com/ruoyi/auth/service/SysLoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-auth/target/ruoyi-auth-3.4.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/annotation/Excel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/annotation/Excels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/CacheConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/GenConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/HttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/ScheduleConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/ServiceNameConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/TokenConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/constant/UserConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/context/SecurityContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/domain/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/CaptchaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/CheckedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/DemoModeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/GlobalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/InnerAuthException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/PreAuthorizeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/UtilException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/auth/NotLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/auth/NotPermissionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/auth/NotRoleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/base/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/file/FileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/file/FileNameLengthLimitExceededException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/file/FileSizeLimitExceededException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/file/InvalidExtensionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/job/TaskException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/user/CaptchaExpireException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/user/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/exception/user/UserPasswordNotMatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/text/CharsetKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/text/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/text/StrFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/ExceptionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/ReUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/SpringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/bean/BeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/bean/BeanValidators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/file/FileTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/file/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/file/ImageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/file/MimeTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/html/EscapeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/html/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/ip/IpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/poi/ExcelHandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/poi/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/reflect/ReflectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/sign/Base64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/sql/SqlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/uuid/IdUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/uuid/Seq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/utils/uuid/UUID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/web/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/web/domain/AjaxResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/web/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/web/domain/TreeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/web/page/PageDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/web/page/TableDataInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/web/page/TableSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/xss/Xss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/java/com/ruoyi/common/core/xss/XssValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/src/main/java/com/ruoyi/common/datascope/annotation/DataScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/src/main/java/com/ruoyi/common/datascope/aspect/DataScopeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datascope/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/src/main/java/com/ruoyi/common/datasource/annotation/Master.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/src/main/java/com/ruoyi/common/datasource/annotation/Slave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/src/main/java/com/ruoyi/common/datasource/env/ApplicationSeataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-datasource/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/src/main/java/com/ruoyi/common/log/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/src/main/java/com/ruoyi/common/log/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/src/main/java/com/ruoyi/common/log/enums/BusinessStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/src/main/java/com/ruoyi/common/log/enums/BusinessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/src/main/java/com/ruoyi/common/log/enums/OperatorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/src/main/java/com/ruoyi/common/log/service/AsyncLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-log/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/src/main/java/com/ruoyi/common/redis/configure/FastJson2JsonRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/src/main/java/com/ruoyi/common/redis/configure/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/src/main/java/com/ruoyi/common/redis/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-redis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/annotation/EnableCustomConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/annotation/EnableRyFeignClients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/annotation/InnerAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/annotation/Logical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/annotation/RequiresLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/annotation/RequiresPermissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/annotation/RequiresRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/aspect/InnerAuthAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/aspect/PreAuthorizeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/auth/AuthLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/auth/AuthUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/feign/FeignAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/feign/FeignRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/interceptor/HeaderInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/utils/DictUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/java/com/ruoyi/common/security/utils/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-security/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/src/main/java/com/ruoyi/common/swagger/annotation/EnableCustomSwagger2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/src/main/java/com/ruoyi/common/swagger/config/SwaggerAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/src/main/java/com/ruoyi/common/swagger/config/SwaggerBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/src/main/java/com/ruoyi/common/swagger/config/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/src/main/java/com/ruoyi/common/swagger/config/SwaggerWebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-common/ruoyi-common-swagger/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/RuoYiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/CaptchaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/GatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/KaptchaTextCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/RouterFunctionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/SwaggerProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/properties/CaptchaProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/properties/IgnoreWhiteProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/config/properties/XssProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/filter/BlackListUrlFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/filter/CacheRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/filter/ValidateCodeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/handler/GatewayExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/handler/SentinelFallbackHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/handler/SwaggerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/handler/ValidateCodeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/service/ValidateCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/java/com/ruoyi/gateway/service/impl/ValidateCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-gateway/target/ruoyi-gateway-3.4.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/RuoYiFileApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/config/MinioConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/config/ResourcesConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/controller/SysFileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/service/FastDfsSysFileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/service/ISysFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/service/LocalSysFileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/service/MinioSysFileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/java/com/ruoyi/file/utils/FileUploadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-file/target/ruoyi-modules-file-3.4.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/RuoYiGenApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/config/GenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/controller/GenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/domain/GenTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/domain/GenTableColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/mapper/GenTableColumnMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/mapper/GenTableMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/service/GenTableColumnServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/service/GenTableServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/service/IGenTableColumnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/service/IGenTableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/util/GenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/util/VelocityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/java/com/ruoyi/gen/util/VelocityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/mapper/generator/GenTableColumnMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/mapper/generator/GenTableMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/java/controller.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/java/domain.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/java/mapper.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/java/service.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/java/serviceImpl.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/java/sub-domain.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/js/api.js.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/sql/sql.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/vue/index-tree.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/vue/index.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/vue/v3/index-tree.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/vue/v3/index.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/vue/v3/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/src/main/resources/vm/xml/mapper.xml.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/mapper/generator/GenTableColumnMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/mapper/generator/GenTableMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/java/controller.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/java/domain.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/java/mapper.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/java/service.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/java/serviceImpl.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/java/sub-domain.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/js/api.js.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/sql/sql.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/vue/index-tree.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/vue/index.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/vue/v3/index-tree.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/vue/v3/index.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/vue/v3/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/classes/vm/xml/mapper.xml.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-gen/target/ruoyi-modules-gen-3.4.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/RuoYiJobApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/config/ScheduleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/controller/SysJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/controller/SysJobLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/domain/SysJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/domain/SysJobLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/mapper/SysJobLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/mapper/SysJobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/service/ISysJobLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/service/ISysJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/service/SysJobLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/service/SysJobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/task/RyTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/util/AbstractQuartzJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/util/CronUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/util/JobInvokeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/util/QuartzDisallowConcurrentExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/util/QuartzJobExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/java/com/ruoyi/job/util/ScheduleUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/resources/mapper/job/SysJobLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/src/main/resources/mapper/job/SysJobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/classes/mapper/job/SysJobLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/classes/mapper/job/SysJobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-job/target/ruoyi-modules-job-3.4.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/RuoYiSystemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysDeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysDictDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysDictTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysLogininforController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysNoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysOperlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysPostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/controller/SysUserOnlineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysRoleDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysUserOnline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysUserPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/vo/MetaVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/vo/RouterVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/domain/vo/TreeSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDictDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDictTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysLogininforMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysOperLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysUserPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysLogininforService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysNoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysOperLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysPostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysUserOnlineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysLogininforServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysNoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysOperLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysPermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysPostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysUserOnlineServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysConfigMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysDictDataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysDictTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysLogininforMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysNoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysOperLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysRoleDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysRoleMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysUserPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/src/main/resources/mapper/system/SysUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysConfigMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysDictDataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysDictTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysLogininforMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysNoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysOperLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysRoleDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysRoleMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysUserPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/classes/mapper/system/SysUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-modules/ruoyi-system/target/ruoyi-modules-system-3.4.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/bin/build.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/bin/package.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/bin/run-web.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/public/html/ie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/monitor/job.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/monitor/jobLog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/monitor/online.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/dept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/dict/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/dict/type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/logininfor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/notice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/operlog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/system/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/api/tool/gen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/401_images/401.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/404_images/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/404_images/404_cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/bug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/build.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/cascader.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/checkbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/client.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/clipboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/code.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/color.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/component.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/date-range.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/date.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/dict.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/documentation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/drag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/druid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/education.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/example.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/excel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/exit-fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/eye-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/form.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/guide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/input.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/international.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/job.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/language.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/log.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/logininfor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/monitor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/nacos.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/nested.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/number.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/online.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/pdf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/people.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/peoples.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/post.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/qq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/question.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/radio.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/rate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/row.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/select.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/sentinel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/server.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/shopping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/size.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/skill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/slider.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/swagger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/switch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/system.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/textarea.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/theme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/time-range.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/time.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/tool.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/tree-table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/tree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/validCode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/wechat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svg/zip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/icons/svgo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/images/dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/images/light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/images/login-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/images/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/btn.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/element-ui.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/element-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/mixin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/ruoyi.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/assets/styles/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Breadcrumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/day.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/hour.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/min.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/month.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/result.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/second.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/week.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Crontab/year.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/DictData/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/DictTag/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Editor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/FileUpload/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Hamburger/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/HeaderSearch/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/IconSelect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/IconSelect/requireIcons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/ImagePreview/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/ImageUpload/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Pagination/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/PanThumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/ParentView/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/RightPanel/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/RightToolbar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/RuoYi/Doc/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/RuoYi/Git/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/Screenfull/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/SizeSelect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/SvgIcon/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/ThemePicker/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/TopNav/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/components/iFrame/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/directive/dialog/drag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/directive/dialog/dragHeight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/directive/dialog/dragWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/directive/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/directive/module/clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/directive/permission/hasPermi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/directive/permission/hasRole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/AppMain.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/InnerLink/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Settings/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Sidebar/FixiOSBug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Sidebar/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Sidebar/Link.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Sidebar/Logo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Sidebar/SidebarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/Sidebar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/TagsView/ScrollPane.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/TagsView/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/layout/mixin/ResizeHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/plugins/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/plugins/cache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/plugins/download.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/plugins/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/plugins/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/plugins/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/store/modules/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/store/modules/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/store/modules/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/store/modules/tagsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/store/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/dict/Dict.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/dict/DictConverter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/dict/DictData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/dict/DictMeta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/dict/DictOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/dict/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/errorCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/generator/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/generator/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/generator/drawingDefault.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/generator/html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/generator/icon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/generator/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/generator/render.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/jsencrypt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/ruoyi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/scroll-to.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/utils/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/components/icons/element-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/components/icons/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/components/icons/svg-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/dashboard/BarChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/dashboard/LineChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/dashboard/PanelGroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/dashboard/PieChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/dashboard/RaddarChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/dashboard/mixins/resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/error/401.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/error/404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/index_v1.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/monitor/job/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/monitor/job/log.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/monitor/online/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/redirect.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/config/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/dept/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/dict/data.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/dict/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/logininfor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/menu/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/notice/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/operlog/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/post/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/role/authUser.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/role/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/role/selectUser.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/user/authRole.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/user/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/user/profile/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/user/profile/resetPwd.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/user/profile/userAvatar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/system/user/profile/userInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/build/CodeTypeDialog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/build/DraggableItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/build/IconsDialog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/build/RightPanel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/build/TreeNodeDialog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/build/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/gen/basicInfoForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/gen/editTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/gen/genInfoForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/gen/importTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/src/views/tool/gen/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-ui/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/src/main/java/com/ruoyi/modules/monitor/RuoYiMonitorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/src/main/java/com/ruoyi/modules/monitor/config/WebSecurityConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-visual/ruoyi-monitor/target/ruoyi-visual-monitor-3.4.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/quartz.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/ry_20210908.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/ry_config_20220114.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/ry_seata_20210128.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../03_Environment/02-Maven/projects/gulimall/apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\java\03_Environment\02-Maven\projects\gulimall\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GJSmbeFisHkjBxl85FTjf1JIoy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "E:/java/06-project/1-github-project/RuoYi-Cloud",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "55795ccbc9b3bd13b304d46d2f8d77ff"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RuoYiGenApplication">
+    <configuration name="RuoYiAuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-auth (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.auth.RuoYiAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-auth (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.auth.RuoYiAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiFileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-modules-file (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.file.RuoYiFileApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiGatewayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-gateway (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.gateway.RuoYiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-gateway (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.gateway.RuoYiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiGenApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-modules-gen (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.gen.RuoYiGenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiGenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-modules-gen (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.gen.RuoYiGenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiJobApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-modules-job (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.job.RuoYiJobApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiMonitorApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-visual-monitor (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.modules.monitor.RuoYiMonitorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiMonitorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-visual-monitor (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.modules.monitor.RuoYiMonitorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-modules-system (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.system.RuoYiSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbb8e4de-6b8a-43b3-b0b3-b0eb3ac85868" name="Changes" comment="" />
+      <created>1666105355857</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666105355857</updated>
+      <workItem from="1666105369154" duration="314000" />
+      <workItem from="1666105714831" duration="446000" />
+    </task>
+    <task id="LOCAL-00001" summary="补提">
+      <created>1666105883841</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666105883841</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="补提" />
+    <MESSAGE value="部署若依项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="部署若依项目" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ruoyi-api (1)" target="1.8" />
+      <module name="ruoyi-api (2)" target="1.8" />
+      <module name="ruoyi-api-system (1)" target="1.8" />
+      <module name="ruoyi-api-system (2)" target="1.8" />
+      <module name="ruoyi-auth (1)" target="1.8" />
+      <module name="ruoyi-auth (2)" target="1.8" />
+      <module name="ruoyi-common (1)" target="1.8" />
+      <module name="ruoyi-common (2)" target="1.8" />
+      <module name="ruoyi-common-core (1)" target="1.8" />
+      <module name="ruoyi-common-core (2)" target="1.8" />
+      <module name="ruoyi-common-datascope (1)" target="1.8" />
+      <module name="ruoyi-common-datascope (2)" target="1.8" />
+      <module name="ruoyi-common-datasource (1)" target="1.8" />
+      <module name="ruoyi-common-datasource (2)" target="1.8" />
+      <module name="ruoyi-common-log (1)" target="1.8" />
+      <module name="ruoyi-common-log (2)" target="1.8" />
+      <module name="ruoyi-common-redis (1)" target="1.8" />
+      <module name="ruoyi-common-redis (2)" target="1.8" />
+      <module name="ruoyi-common-security (1)" target="1.8" />
+      <module name="ruoyi-common-security (2)" target="1.8" />
+      <module name="ruoyi-common-swagger (1)" target="1.8" />
+      <module name="ruoyi-common-swagger (2)" target="1.8" />
+      <module name="ruoyi-gateway (1)" target="1.8" />
+      <module name="ruoyi-gateway (2)" target="1.8" />
+      <module name="ruoyi-modules (1)" target="1.8" />
+      <module name="ruoyi-modules (2)" target="1.8" />
+      <module name="ruoyi-modules-file (1)" target="1.8" />
+      <module name="ruoyi-modules-file (2)" target="1.8" />
+      <module name="ruoyi-modules-gen (1)" target="1.8" />
+      <module name="ruoyi-modules-gen (2)" target="1.8" />
+      <module name="ruoyi-modules-job (1)" target="1.8" />
+      <module name="ruoyi-modules-job (2)" target="1.8" />
+      <module name="ruoyi-modules-system (1)" target="1.8" />
+      <module name="ruoyi-modules-system (2)" target="1.8" />
+      <module name="ruoyi-visual (1)" target="1.8" />
+      <module name="ruoyi-visual (2)" target="1.8" />
+      <module name="ruoyi-visual-monitor (1)" target="1.8" />
+      <module name="ruoyi-visual-monitor (2)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

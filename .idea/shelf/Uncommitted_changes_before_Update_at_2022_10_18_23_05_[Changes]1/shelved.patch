@@ -1,0 +1,34 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1666105471516)
++++ b/.idea/vcs.xml	(date 1666105471516)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/google-java-format.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/google-java-format.xml b/.idea/google-java-format.xml
+new file mode 100644
+--- /dev/null	(date 1666105471293)
++++ b/.idea/google-java-format.xml	(date 1666105471293)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GoogleJavaFormatSettings">
++    <option name="enabled" value="true" />
++  </component>
++</project>
+\ No newline at end of file

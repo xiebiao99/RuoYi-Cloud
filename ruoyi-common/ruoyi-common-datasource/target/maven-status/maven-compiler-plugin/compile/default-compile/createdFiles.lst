@@ -1,0 +1,3 @@
+com\ruoyi\common\datasource\annotation\Slave.class
+com\ruoyi\common\datasource\env\ApplicationSeataInitializer.class
+com\ruoyi\common\datasource\annotation\Master.class

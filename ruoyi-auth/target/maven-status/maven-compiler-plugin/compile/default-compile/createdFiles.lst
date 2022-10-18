@@ -1,0 +1,5 @@
+com\ruoyi\auth\controller\TokenController.class
+com\ruoyi\auth\form\RegisterBody.class
+com\ruoyi\auth\RuoYiAuthApplication.class
+com\ruoyi\auth\form\LoginBody.class
+com\ruoyi\auth\service\SysLoginService.class
