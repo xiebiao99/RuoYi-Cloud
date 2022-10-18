@@ -2,7 +2,7 @@
 
    用docker部署RuoYi-Cloud
 
-   https://gitee.com/y_project/RuoYi-Cloud
+   https://github.com/xiebiao99/RuoYi-Cloud
 
    # 一、服务器说明
 
